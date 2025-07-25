@@ -199,9 +199,6 @@ padding: 65px 46px;
 }
 
 
-
-
-
 /* join section  */
 .join-section{
     background-image: url("../assets/news-letter-bg.png");
@@ -229,15 +226,19 @@ padding: 65px 46px;
 
 /* footer-container  */
 .footer-container{
-    display:flex;
-    justify-content: space-;
     margin: 50px auto;
 }
-.footer-container > div{
-    flex: 1;
-} 
+.footer-grid{
+   
+    display:grid;
+    
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
 .footer-container img{
     max-width: 100%;
     height: auto;
 }
 
+ 
