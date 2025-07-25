@@ -39,7 +39,7 @@ button{
     font-size:1rem ;
     font-weight: 600;
     color:#FFFFFF;
-    padding: 15px;
+    padding: 1rem;
     border:none ;
     width: 100%;   
 }
@@ -49,7 +49,6 @@ button{
 .nav-container{
    justify-content: space-between;
    align-items: center;
-   /* margin-top: 30px; */
 }
 .nav-links{
     gap: 3rem;
@@ -102,10 +101,10 @@ button{
     .banner-photo{
         width: 100%;
     }
-    /* .nav-container,.banner-text{
+    .nav-container,.banner-text,footer{
         max-width: 361px;
-        margin: 0 auto;
-    } */
+        margin: 0 16px;
+    }
     
  }
 
@@ -117,8 +116,7 @@ button{
     grid-template-columns: repeat(4,1fr);
  }
  .plant-text{
-    text-align:center;
-    
+    text-align:center; 
  }
  .plant-title{
     font-size:3rem ;
@@ -133,11 +131,54 @@ button{
 @media screen and (max-width:576px) {
     .plant-cards{
     grid-template-columns: repeat(2,1fr);
+    
  }
  .plant-container{
     margin: 0px 15px;
+    margin-right: 10px;
  }
+ .plant-text{
+    text-align: center;
+ }
+  button{
+        padding:15px 30px ;
+    }
 
+}
+
+
+/* extra part  */
+.container{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 50px auto;
+    margin-top: 200px;
+}
+.img-section{
+ position: relative;
+ width: 50%;
+}
+.text-section{
+    padding-left: 60px;
+}
+.img-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.badge{
+    position: absolute;
+    top: -150px;
+    left: 150px;
+}
+.container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.list{
+    padding-top:10px ;
 }
 
 /* plant lovwer  */
@@ -202,6 +243,7 @@ padding: 65px 46px;
 /* join section  */
 .join-section{
     background-image: url("../assets/news-letter-bg.png");
+    width: 100%;
 }
 .join-input{
     display: flex;
@@ -209,6 +251,7 @@ padding: 65px 46px;
 }
 .join{
     padding: 12rem 19rem;
+    text-align: center;
 }
 
 .join-title{
@@ -221,8 +264,15 @@ padding: 65px 46px;
     /* padding: 15px 540px 15px 20px; */
     padding: 1rem 20rem 1rem 1.4rem;
 }
-
-
+/* join section res.......  */
+@media screen and (max-width:576px) {
+    .join{
+        padding:110px 36px 64px 36px ;
+    }
+    .email{
+         padding: 15px 55px 15px 20px;
+    }
+ }
 
 /* footer-container  */
 .footer-container{
@@ -241,4 +291,16 @@ padding: 65px 46px;
     height: auto;
 }
 
+
+/* footer-container res......  */
+ @media screen and (max-width: 576px) {
+    .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .icon{
+        display: none;
+    }
+   
+ }
  
